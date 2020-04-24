@@ -4,6 +4,15 @@
     color: white;
 }
 
+a {
+    color: rgba(223, 223, 223, 0.712);
+    text-decoration: none;
+}
+
+a:hover:not(.active) {
+    background-color: #ddd;
+}
+
 span {
     font-size: 15px;
     font-family: Microsoft YaHei;
