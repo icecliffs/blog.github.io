@@ -1,21 +1,31 @@
 /* Ok this is my code... */
 
 * {
+    font-family: Monospace;
     color: white;
+}
+
+.fa {
+    color: white;
+    /* text-decoration: none; */
+}
+
+.fa:hover:not(.active) {
+    background-color: rgba(139, 56, 56, 0.74);
 }
 
 a {
     color: rgba(223, 223, 223, 0.712);
-    text-decoration: none;
+    /* text-decoration: none; */
 }
 
 a:hover:not(.active) {
-    background-color: #ddd;
+    background-color: rgba(139, 56, 56, 0.74);
 }
 
 span {
     font-size: 15px;
-    font-family: Microsoft YaHei;
+    font-family: Monospace;
 }
 
 body {
@@ -25,6 +35,10 @@ body {
 
 .shell-blue {
     color: rgb(15, 74, 198);
+}
+
+.shell-type {
+    color: rgb(248, 220, 192)
 }
 
 .shell-red {
