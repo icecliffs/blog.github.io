@@ -155,6 +155,7 @@ h5,
 h6 {
     font-family: "Arial", "Microsoft YaHei", "黑体", "宋体", sans-serif;
     color: #ffffff;
+    margin-left: 10px;
 }
 
 span.heimu a.external,
