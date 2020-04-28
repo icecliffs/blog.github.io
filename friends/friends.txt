@@ -20,5 +20,3 @@
     第一资源网 - http://www.dyboy.cn/ - 第一资源网，专业的资源网！分享技术与福利！
 
     陌离博客 - http://www.moleft.cn/ - 陌离博客 - 专注于分享资源
-
-    鹏龙-道记 - https://www.jcdpn.cn/ - GitOSCC开源代码资源网，专注发布分享精品源码资源
