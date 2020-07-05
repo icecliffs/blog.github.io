@@ -242,6 +242,7 @@
     <meta name="description" content="A super hacker who loves computers :D">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="countdown.js"></script>
     <meta name="author" content="IceCliffs">
     <meta name="keywords" content="Pentest,cyber security,network security,hack,hacking,web security">
 
@@ -249,7 +250,7 @@
     <link rel="stylesheet" href="./lib/css/emoji.css">
 </head>
 
-<body>
+<body onload="countTime()">
     <header>
         <ul>
             <li><a href="https://www.icecliffs.cn/anime" title="可能有点慢(指访问)">Anime(A)</a></li>
@@ -262,6 +263,14 @@
     </header>
     <span>⚡ IceCliffs#Computer  <span class="console-log">
         <span class="console-main"></span>&nbsp; &nbsp; https://www.icecliffs.cn/
+    </span><br>
+    <span><span class="shell-blue">&nbsp;❯&nbsp;</span><span class="shell-yellow">&nbsp;echo&nbsp;</span><span class="shell-red">
+        <a href="./exam.html">学业水平倒计时</a>
+        <span id="day">00</span>
+    <span id="hour">00</span>
+    <span id="min">00</span>
+    <span id="sec">00</span>
+    </span>
     </span>
     </span><br>
     <span><span class="shell-blue">&nbsp;❯&nbsp;</span><span class="shell-yellow">&nbsp;echo&nbsp;</span><span class="shell-red"><a href="" title="我备案在这，你们爬虫爬到没？">'闽ICP备19014658号-1'</a></span></span>
