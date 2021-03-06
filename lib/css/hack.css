@@ -1,0 +1,128 @@
+/* Ok this is my code... */
+
+* {
+    font-family: Monospace;
+    color: white;
+}
+
+.fa {
+    color: white;
+    /* text-decoration: none; */
+}
+
+.fa:hover:not(.active) {
+    background-color: rgba(139, 56, 56, 0.74);
+}
+
+a {
+    color: rgba(223, 223, 223, 0.712);
+    /* text-decoration: none; */
+}
+
+a:hover:not(.active) {
+    background-color: rgba(139, 56, 56, 0.74);
+}
+
+span {
+    font-size: 15px;
+    font-family: Monospace;
+}
+
+body {
+    background-color: rgb(36, 36, 36);
+    margin: 0;
+}
+
+.shell-blue {
+    color: rgb(15, 74, 198);
+}
+
+.shell-type {
+    color: rgb(248, 220, 192)
+}
+
+.shell-red {
+    color: rgb(112, 165, 152);
+}
+
+.shell-yellow {
+    color: rgb(239, 193, 26)
+}
+
+.console-main {
+    display: inline-block;
+    background: rgb(5, 4, 4);
+    position: relative;
+}
+
+.console-main:after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 100%;
+    border: 9.6px solid transparent;
+    border-left-color: rgb(5, 4, 4);
+}
+
+.console-log {
+    display: inline-block;
+    background: rgb(15, 74, 198);
+    position: relative;
+}
+
+.console-log:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 100%;
+    border: 8.8px solid transparent;
+    border-left-color: rgb(15, 74, 198);
+}
+
+.console-path1 {
+    display: inline-block;
+    background: rgb(52, 101, 164);
+    position: relative;
+}
+
+.console-path1:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 100%;
+    border: 8.8px solid transparent;
+    border-left-color: rgb(52, 101, 164);
+}
+
+
+/* Tour Guide - Fuck you  css */
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #e7e7e7;
+    background-color: #f3f3f3;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: #666;
+    text-align: center;
+    padding: 7px 9px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #ddd;
+}
+
+li a.active {
+    color: white;
+    background-color: #4CAF50;
+}

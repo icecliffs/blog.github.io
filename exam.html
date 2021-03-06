@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>学业水平技能考试倒计时</title>
+    <script src="countdown.js"></script>
+    <style>
+        body {
+            margin: 0 auto;
+            width: 60%;
+            background: url('https://cdn.jsdelivr.net/gh/spirit1431007/cdn@1.6/img/sakura.png');
+        }
+        
+        .exam {
+            text-align: center;
+            margin: 10%;
+            padding: 25px 25px;
+            height: 650px;
+        }
+        
+        span {
+            padding-top: 50px;
+            font-size: 90px;
+            font-family: Microsoft YaHei;
+        }
+        
+        .tit {
+            font-family: Microsoft YaHei;
+        }
+        
+        .tn {
+            font-family: Microsoft YaHei;
+            text-align: left;
+        }
+        
+        .r {
+            font-size: 15px;
+            color: red;
+        }
+    </style>
+</head>
+
+<body onload="countTime()">
+    <div class="exam">
+        <span id="day">00</span>
+        <span id="hour">00</span>
+        <span id="min">00</span>
+        <span id="sec">00</span>
+        <p class="tit">
+            拟定2021年4月11-12日技能考试，请以考试院发出的公告为标准！
+        </p>
+        <p class="tit">
+            学业水平考试乃人生大考，祝福各位考生考上心仪的学校！ 字体来源：田相岳圆楷体（非商用）
+        </p>
+        <p class="tn">（1）准备充分，忙中有序 试前的准备是否充分对临场的情绪状态和水平的发挥有重要的影响。试前准备包括心理、知识的准备、物品的准备和掌握考试的有关事项等准备。 </p>
+        <p class="tn">（2）倾听说明，填写卷头 答题之前，听监考老师讲注意事项，要先填好卷头，如姓名、考区、考号、学校等等，这些方面不要等到交卷之前再填。那时，时间已到，别人起身交卷，会使你也急于交卷而忘记填写。</p>
+        <p class="tn">（3）通读试卷，统观全局 开始答题前，要先数试卷的页数，看清试卷前面的说明及要求，随后冷静、迅速地认真通读一遍试卷，并注意检查背面有无试题。这样可以对试题的类型、每题所占的比例和分布有所了解，一做到心中有数，为正式答题打下基础。通读试卷不是浪费时间，而是预防错漏，少走弯路，合理利用时间，提高答卷效率的有效方法。</p>
+        <p class="tn">（4）认真审题，明确要求 参加任何考试至关重要的一步是反复阅读考题要求，在答题之前认真审题。读题一定要细心推敲题意，掌握已知条件，看准所求问题，分析条件和问题之间的关系，回忆所需的有关知识。总之审题一定要做到一不漏掉题，二不看错题，三要看准题，四要着全题目的条件和要求。要细而又细，慎而又慎，“咬文嚼字”反复琢磨。尤其是看似容易的题目，更要字字斟酌，句句推敲，严防错觉。有些题目似曾相识，更不要疏忽大意，造成错漏。如果审题不细，一字之差，致使平日苦功废于一旦。</p>
+        <p class="tn">（5）先易后难，掌握顺序 一般试卷题目的安排在难度上呈阶梯型，由易到难依次排列。前面多基础知识的题目，后边多综合性题日。通读试卷后，先做自己认为有把握的题目，这样能合理利用时间。</p>
+        <p class="tn">（6）书写工整，格式正确 卷面书写要工整，字迹要清晰，如果字迹潦草容易使阅卷人看不清，卷面不整洁容易丢掉这部分分数。 （7）仔细检查，文卷勿慌 做完卷后，一定要仔细检查，防止由于粗心与马虎而出错。检查试卷一要仔细，二要耐心。首先要逐题检查，先查题、目要求，对照原题，看是否抄错了数字、词语、符号；再看答题过程是否规范，计算抄写是否有错；最后查答案是否正确，有无抄错抄漏等情况。</p>
+        <p>倒计时：2020<span class="r">年</span class="r">9<span class="r">月</span>19<span class="r">号</span></p>
+    </div>
+</body>
+
+</html>
