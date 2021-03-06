@@ -11,10 +11,9 @@ function countTime() {
         m = Math.floor(leftTime / 1000 / 60 % 60);
         s = Math.floor(leftTime / 1000 % 60);
     }
-    document.getElementById("day").innerHTML = d + "天";
-    document.getElementById("hour").innerHTML = h + "时";
-    document.getElementById("min").innerHTML = m + "分";
-    document.getElementById("sec").innerHTML = s + "秒";
+    document.getElementById("day").innerHTML = d;
+    document.getElementById("hour").innerHTML = h;
+    document.getElementById("min").innerHTML = m;
+    document.getElementById("sec").innerHTML = s;
     setTimeout(countTime, 1000);
-
 }
