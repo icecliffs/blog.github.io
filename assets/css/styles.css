@@ -3,19 +3,18 @@
     padding: 0;
 }
 body{
-    background: url(/assets/img/touhou-background-1.jpg);
+    background: url(/assets/img/touhou-background.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
 }
 .container{
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0,0,0,0.6);
     display:flex;
     justify-content: center;
     align-items: center;
@@ -25,20 +24,33 @@ body{
     width: 45%;
     height: 400px;
     display:-webkit-flex;
-    justify-content: center;
-    border: 1px solid red;
     float: left;
+    background-color: rgb(0,0,0,0.7);
+    border-radius: 10px;
 }
-.box .avator{
-    height: 180px;
+
+.box .avatar{
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
-    border: 10px solid rgb(255,255,255,0.9);
+    border: 10px solid rgb(255,255,255,0.7);
 }
-.front-navigator{
-    display: flex;
-    width: 100%;
-    border: 1px solid red;
+
+.introduce{
+    width: 250px;
+    height: 100%;
+    text-align: center;
+    display:-webkit-flex;
     justify-content: center;
     align-items: center;
-    height: 10px;
+    background-color: rgb(122, 122, 122,0.5);
+}
+
+.introduce p{
+    color: white;
+    font-size: 10px;
+}
+
+.introduce-neighbor{
+    padding: 20px 20px;
 }
