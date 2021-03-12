@@ -16,17 +16,29 @@ body{
     width: 100%;
     height: 100%;
     background-color: rgba(0,0,0,0.6);
+    display:flex;
+    justify-content: center;
+    align-items: center;
 }
 .box{
     margin: 0 auto;
     width: 45%;
+    height: 400px;
     display:-webkit-flex;
-    align-items: center;
     justify-content: center;
+    border: 1px solid red;
+    float: left;
 }
 .box .avator{
     height: 180px;
-    margin-top: 20%;
     border-radius: 50%;
     border: 10px solid rgb(255,255,255,0.9);
+}
+.front-navigator{
+    display: flex;
+    width: 100%;
+    border: 1px solid red;
+    justify-content: center;
+    align-items: center;
+    height: 10px;
 }

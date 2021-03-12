@@ -1,32 +1,58 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>IceCliffs - Index Page</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="./assets/css/styles.css">
-    </head>
-    <body>
-        <div class="container">
-            <header>
-
-            </header>
-            <div class="box">
-                <img src="https://cdn.jsdelivr.net/gh/icecliffs/images@0.0.8/avatar.png" class="avator">
-            </div>
-            <footer>
-
-            </footer>
+<html lang="zh-cmn-Hans">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="HandheldFriendly" content="true">
+    <title>IceCliffs - Index</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/minireset.css@0.0.3/minireset.min.css" integrity="sha256-rYUTtzummUpBJLuuLnVN9Hy06M9uLlZ8W8VZOyiX2WQ="
+        crossorigin="anonymous">
+    <link href="assets/css/main.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js" integrity="sha256-9uAoNWHdszsUDhSXf/rVcWOqKPfi5/8V5R4UdbZle2A=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js" integrity="sha256-nwhzW/P9gnvWMPOm84MK8BzQRRMdi8iutxMuYsYcOgw=" crossorigin="anonymous"></script>
+    <![endif]-->
+</head>
+<body>
+    <div id="background-small"></div>
+    <!-- Loading hover -->
+    <div class="loading">
+        <div class="spinner">
+            <div class="rect1"></div>
+            <div class="rect2"></div>
+            <div class="rect3"></div>
+            <div class="rect4"></div>
+            <div class="rect5"></div>
         </div>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-        <script src="" async defer></script>
-    </body>
+    </div>
+    <!-- Main box -->
+    <main>
+        <div class="content">
+            <div class="left">
+                <div class="avatar">
+                    <img src="/assets/img/avatar.png">
+                </div>
+                <ul class="menu">
+                    <li>
+                        <a goto="#home">HOME</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="right">
+                <section id="home" class="active">
+                    <h1>IceCliffs</h1>
+
+                </section>
+            </div>
+        </div>
+        <footer>
+            <p id="hitokoto">Loading...</p>
+        </footer>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
 </html>
