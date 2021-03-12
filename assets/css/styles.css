@@ -34,14 +34,35 @@ body{
     height: 110px;
     border-radius: 50%;
     border: 10px solid rgb(255 255 255 / 44%);
-    transform : rotate(0deg);
-    transition: 0.1 ease-in;
+    -webkit-background-size: 220px 220px;
+    -moz-background-size: 220px 220px;
+    background-size: 220px 220px;
+    -webkit-border-radius: 110px;
+    border-radius: 110px;
+    -webkit-transition: -webkit-transform 0.5s ease-out;
+    -moz-transition: -moz-transform 0.5s ease-out;
+    -o-transition: -o-transform 0.5s ease-out;
+    -ms-transition: -ms-transform 0.5s ease-out;
 }
 
-.introduce .avatar:hover{
-    transform : rotate(360deg);
-    transition: 0.1 ease-in;
+.avatar:hover{
+    -webkit-transform: rotateZ(360deg);
+    -moz-transform: rotateZ(360deg);
+    -o-transform: rotateZ(360deg);
+    -ms-transform: rotateZ(360deg);
+    transform: rotateZ(360deg);
 }
+
+/* -webkit-transform: rotate(360deg);
+animation: rotation 1s linear;
+-moz-animation: rotation 1s linear;
+-webkit-animation: rotation 1s linear;
+-o-animation: rotation 1s linear; */
+
+/* @-webkit-keyframes rotation{
+    from {-webkit-transform: rotate(0deg);}
+    to {-webkit-transform: rotate(360deg);}
+} */
 
 .introduce{
     width: 250px;
