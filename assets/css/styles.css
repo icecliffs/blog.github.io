@@ -106,6 +106,35 @@ animation: rotation 1s linear;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 
+.introduce-neighbor a:hover{
+
+    padding-left: 30px;
+}
+
+#banner_wave_1 {
+    height: 40px;
+    background: url(/assets/img/wave.png) repeat-x;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    opacity: 1;
+    filter: blur(3px);
+    animation: move2 8s linear infinite;
+}
+
+#banner_wave_2 {
+    filter: blur(3px);
+    height: 40px;
+    background: url(/assets/img/wave.png) repeat-x;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    animation: move2 3s linear infinite;
+}
+@keyframes move2{100%{background-position:-100% 0}}
+
+
 .tt-page{
     font-size: 25px;
     text-align: center;
@@ -114,7 +143,7 @@ animation: rotation 1s linear;
 }
 
 .copy-right {
-    padding-top: 121px;
+    padding-top: 110px;
     font-size: 15px;
     text-align: center;
     color: white;
@@ -126,4 +155,9 @@ animation: rotation 1s linear;
         width: 440px;
         height: 700px;
     }
+}
+
+.hitokoto{
+    text-align: center;
+    color: white;
 }
