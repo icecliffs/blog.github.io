@@ -182,11 +182,3 @@ animation: rotation 1s linear;
     justify-content: center;
     display: inline-block;
 }
-
-.copyright{
-    position:absolute;
-    right: 5px;
-    top: 5px;
-    color: white;
-    font-weight: bold;
-}
