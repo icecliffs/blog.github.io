@@ -151,6 +151,10 @@ animation: rotation 1s linear;
         width: 440px;
         height: 700px;
     }
+    .links{
+        width: 100px;
+        background-color: rgb(0,0,0,0.5);
+    }
 }
 
 .hitokoto{
@@ -180,5 +184,38 @@ animation: rotation 1s linear;
     display: -webkit-flex;
     align-items: center;
     justify-content: center;
+    display: inline-block;
+}
+
+.command{
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    text-align: center;
+    margin-top: 0;
+    padding: 5px 0px 5px 0px;
+    background-color: rgb(0,0,0,0.5);
+}
+
+.container .type-command{
+    color: white;
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+
+.links{
+    font-weight: 400;
+    right: 0;
+    top: 0;
+    padding: 5px 0px 5px 0px;
+    position: fixed;
+}
+
+.links a{
+    color:rgb(255, 255, 255);
+    padding-right: 10px;
+    text-decoration: none;
     display: inline-block;
 }
