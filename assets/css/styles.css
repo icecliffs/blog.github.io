@@ -11,6 +11,7 @@ body{
     background-attachment: fixed;
 }
 .container{
+    z-index: 233;
     overflow: hidden;
     position: absolute;
     top: 0;
@@ -254,4 +255,10 @@ animation: rotation 1s linear;
 
 .beian a:hover{
     text-decoration: underline;
+}
+
+.fuckcat{
+    position: fixed;
+    z-index: 0;
+    width: 100%;
 }
