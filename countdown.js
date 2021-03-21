@@ -1,7 +1,7 @@
 function countTime() {
     var date = new Date();
     var now = date.getTime();
-    var endDate = new Date("2021-04-11 00:00:00");
+    var endDate = new Date("2021-04-06 00:00:00");
     var end = endDate.getTime();
     var leftTime = end - now;
     var d, h, m, s;
