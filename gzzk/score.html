@@ -103,12 +103,12 @@
                     <td id="zz"></td>
                     <td id="jn"></td>
                     <td></td>
-                    <td id="sum">476</td>
+                    <td id="sum"></td>
                     <td id="pm">6762</td>
                     <td id="jn">166</td>
                     <td></td>
-                    <td id="sum">476</td>
-                    <td id="pm">6762</td>
+                    <td id="sum1"></td>
+                    <td id="pm1">6762</td>
                 </tr>
             </table>
             <div class="btn">
@@ -125,13 +125,17 @@
         </div>
     </div>
     <script>
-        $varGG = Math.floor(Math.random() * 550) + 1;
-        $varZZ = Math.floor(Math.random() * 200) + 1;
+        $varGG = Math.floor(Math.random() * 300) + 1;
+        $varZZ = Math.floor(Math.random() * 250) + 1;
         $varJN = Math.floor(Math.random() * 200) + 1;
+        $varPM = Math.floor(Math.random() * 10000) + 1;
         document.getElementById("gg").innerHTML = $varGG;
         document.getElementById("zz").innerHTML = $varZZ;
         document.getElementById("jn").innerHTML = $varJN;
-
+        document.getElementById("pm").innerHTML = $varPM;
+        document.getElementById("pm1").innerHTML = $varPM;
+        document.getElementById("sum").innerHTML = ($varGG+$varJN+$varZZ);
+        document.getElementById("sum1").innerHTML = ($varGG+$varJN+$varZZ);
     </script>
 </body>
 </html>
