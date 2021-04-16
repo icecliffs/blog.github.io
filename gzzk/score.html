@@ -2,14 +2,14 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>高职分类考试成绩查询（假的）</title>
     <style>
         *{
             margin: 0;
             padding: 0;
         }
         body{
-            background: url(/logo1.jpg);
+            background: url(https://www.icecliffs.cn/gzzk/logo1.jpg);
         }
         .container{
             display: flex;
@@ -73,7 +73,7 @@
 <body>
     <div class="container">
         <header class="header">
-            <img src="/login_logotxt2.png" class="logo1">
+            <img src="https://www.icecliffs.cn/gzzk/login_logotxt2.png" class="logo1">
             <h1 class="tt">福建省2021年高职分类招考考生成绩单</h1>
         </header>
         <div class="box">
@@ -99,16 +99,16 @@
                 <tr>
                     <td>欧阳熊和</td>
                     <td>21350582852333</td>
-                    <td>198</td>
-                    <td>112</td>
-                    <td>166</td>
+                    <td id="gg"></td>
+                    <td id="zz"></td>
+                    <td id="jn"></td>
                     <td></td>
-                    <td>476</td>
-                    <td>6762</td>
-                    <td>166</td>
+                    <td id="sum">476</td>
+                    <td id="pm">6762</td>
+                    <td id="jn">166</td>
                     <td></td>
-                    <td>476</td>
-                    <td>6762</td>
+                    <td id="sum">476</td>
+                    <td id="pm">6762</td>
                 </tr>
             </table>
             <div class="btn">
@@ -124,5 +124,14 @@
             <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4.报名时，一只能报考高职(专科)批次”的考生，无:本科批次成绩”栏目信息。</p>
         </div>
     </div>
+    <script>
+        $varGG = Math.floor(Math.random() * 550) + 1;
+        $varZZ = Math.floor(Math.random() * 200) + 1;
+        $varJN = Math.floor(Math.random() * 200) + 1;
+        document.getElementById("gg").innerHTML = $varGG;
+        document.getElementById("zz").innerHTML = $varZZ;
+        document.getElementById("jn").innerHTML = $varJN;
+
+    </script>
 </body>
 </html>
