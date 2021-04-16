@@ -50,7 +50,7 @@
                 </tr>
             </table>
             <p id="info">
-                
+
             </p>
             <button class="btn" onclick="getList()">
                 大胆点我
@@ -59,6 +59,15 @@
                 function getList(){
                     $varList = Math.floor(Math.random() * 7360) + 1;
                     $varTD = document.getElementById("list").innerHTML = $varList;
+                    if ($varList < 100) {
+                        document.getElementById("info").innerHTML = "本科稳了";
+                    }else if ($varList >= 100 && $varList <= 5000){
+                        document.getElementById("info").innerHTML = "大专稳了";
+                    }else if ($varList > 6000){
+                        document.getElementById("info").innerHTML = "你没书读🌶";
+                    }else{
+                        document.getElementById("info").innerHTML = "仅供娱乐，请勿当真";
+                    }
                 }
             </script>
         </div>
