@@ -17,13 +17,27 @@
             justify-content: center;
         }
         .btn{
+            outline: none;
             margin-top: 50px;
             border-radius: 10px;
             height: 35px;
             width: 80px;
         }
+        .btn::before {
+            background-color: #000;
+            border: inherit;
+            border-color: #000;
+            border-radius: inherit;
+            transform: translate(-50%, -50%);
+            opacity: 0;
+            content: ' ';
+        }
+        .btn:active::before {
+            opacity: 0.1;
+        }
         .box{
-            border-radius: 10px;
+            box-shadow: 0px 1px 10px 3px rgba(0,0,0);
+            border-radius: 19px;
             padding: 100px 50px 70px 50px;
             margin-top: 100px;
             border: 1px solid black;
@@ -39,12 +53,15 @@
         .form #list{
             border: 1px solid black;
         }
+        #info{
+            height: 10px;
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="box">
-            <h1 style="padding-top: 65px;font-size: 20px;">
+            <h1 style="padding-top: 65px;font-size: 20px;font-weight: 500;">
                 快来猜测你的计算机省排名吧
             </h1>
             <table class="form">
@@ -52,7 +69,7 @@
                     <th>排名</th>
                 </tr>
                 <tr>
-                    <td id="list">1622</td>
+                    <td id="list"></td>
                 </tr>
             </table>
             <p id="info">
