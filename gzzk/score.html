@@ -98,7 +98,7 @@
                 </tr>
                 <tr>
                     <td>欧阳熊和</td>
-                    <td>21350582852333</td>
+                    <td id="ksh">21350582</td>
                     <td id="gg"></td>
                     <td id="zz"></td>
                     <td id="jn"></td>
@@ -129,6 +129,8 @@
         $varZZ = Math.floor(Math.random() * 250) + 1;
         $varJN = Math.floor(Math.random() * 200) + 1;
         $varPM = Math.floor(Math.random() * 10000) + 1;
+        $ksz = Math.floor(Math.random() * 900000) + 100000;
+        document.getElementById("ksh").innerHTML = "21350582" + $ksz;
         document.getElementById("gg").innerHTML = $varGG;
         document.getElementById("zz").innerHTML = $varZZ;
         document.getElementById("jn").innerHTML = $varJN;
