@@ -16,14 +16,14 @@
             align-content: center;
             justify-content: center;
         }
-        .btn{
+        #btn{
             outline: none;
             margin-top: 50px;
             border-radius: 10px;
             height: 35px;
             width: 80px;
         }
-        .btn::before {
+        #btn:after {
             background-color: #000;
             border: inherit;
             border-color: #000;
@@ -32,7 +32,7 @@
             opacity: 0;
             content: ' ';
         }
-        .btn:active::before {
+        #btn:active::before {
             opacity: 0.1;
         }
         .box{
@@ -69,13 +69,13 @@
                     <th>排名</th>
                 </tr>
                 <tr>
-                    <td id="list"></td>
+                    <td id="list">&nbsp;</td>
                 </tr>
             </table>
             <p id="info">
-
+                
             </p>
-            <button class="btn" onclick="getList()">
+            <button id="btn" onclick="getList()">
                 大胆点我
             </button>
             <script>
@@ -84,10 +84,13 @@
                     $varTD = document.getElementById("list").innerHTML = $varList;
                     if ($varList < 100) {
                         document.getElementById("info").innerHTML = "本科稳了";
+                        document.getElementById("btn").innerHTML = "本科稳了";
                     }else if ($varList >= 100 && $varList <= 5500){
                         document.getElementById("info").innerHTML = "大专稳了";
+                        document.getElementById("btn").innerHTML = "大专稳了";
                     }else if ($varList > 5500){
                         document.getElementById("info").innerHTML = "你没书读🌶";
+                        document.getElementById("btn").innerHTML = "你没书读🌶";
                     }else{
                         document.getElementById("info").innerHTML = "";
                     }
