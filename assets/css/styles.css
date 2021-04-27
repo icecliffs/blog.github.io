@@ -105,7 +105,7 @@ animation: rotation 1s linear;
     padding-top: 20px;
     padding-left: 20px;
     font-size: 20px;
-    border-bottom: 1px dashed white;
+    /* border-bottom: 1px dashed white; */
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 
@@ -141,6 +141,7 @@ animation: rotation 1s linear;
 }
 
 .copy-right {
+    border-top: none;
     padding-top: 15px;
     font-size: 15px;
     text-align: center;
@@ -151,11 +152,25 @@ animation: rotation 1s linear;
 @media only screen and (max-width: 768px) {
     .box{
         width: 440px;
-        height: 700px;
+        height: 500px;
     }
-    .links{
-        width: 100px;
-        background-color: rgb(0,0,0,0.5);
+    .beian{
+        display: none;
+    }
+    .command-font{
+        display: none;
+    }
+    .fuckcat{
+        display: none;
+    }
+    .archive-list a{
+        padding-left: 0;
+        width:240px;
+        font-size:13px; 
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        word-break: break-all;
     }
 }
 
@@ -193,10 +208,11 @@ animation: rotation 1s linear;
     position: absolute;
     top: 0px;
     width: 100%;
+    z-index: 99;
     text-align: center;
     margin-top: 0;
+    height: 40px;
     padding: 5px 0px 5px 0px;
-    background-color: rgb(0,0,0,0.5);
 }
 
 .container .type-command{
@@ -262,3 +278,89 @@ animation: rotation 1s linear;
     z-index: 0;
     width: 100%;
 }
+
+@font-face {
+    font-family: kawai;
+    src: url(/assets/css/Candyshop.otf);
+}
+
+.command-font{
+    margin-top: 100px;
+    margin-left: 15px;
+}
+
+.h-font {
+    display: inline-block;
+    font-family: kawai;
+    font-size: 80px;
+    color: #FFFF00;
+    -webkit-text-stroke: 2px #000000;
+    position: relative;
+    animation:h-font 5s 1;
+    -moz-animation:h-font 5s 1;
+    -webkit-animation:h-font 5s 1;
+    -o-animation:h-font 5s 1;
+    -webkit-border-radius:5px;
+    box-sizing: border-box;
+    padding-left: 4px;
+}
+
+@keyframes h-font
+{
+    0% {transform: rotate(0deg);color:#fffb00;}
+    25% {transform: rotate(20deg);color:#ff00ea;}
+    50% {transform: rotate(0deg);transform: scale(1.4);}
+    55% {transform: rotate(0deg);color:#0004ff;}
+    60% {transform: rotate(20deg);color:#4dc217;}
+    65% {transform: rotate(0deg);color:#106270;}
+    70% {transform: rotate(0deg);color:#2c9b00;}
+    100% {transform: rotate(-360deg);color:#fffb00;}
+}
+
+@-webkit-keyframes h-font
+{
+    0% {transform: rotate(0deg);color:#fffb00;}
+    25% {transform: rotate(20deg);color:#ff00ea;}
+    50% {transform: rotate(0deg);transform: scale(1.4);}
+    55% {transform: rotate(0deg);color:#0004ff;}
+    60% {transform: rotate(20deg);color:#4dc217;}
+    65% {transform: rotate(0deg);color:#106270;}
+    70% {transform: rotate(0deg);color:#2c9b00;}
+    100% {transform: rotate(-360deg);color:#fffb00;}
+}
+
+@-moz-keyframes h-font
+{
+    0% {transform: rotate(0deg);color:#fffb00;}
+    25% {transform: rotate(20deg);color:#ff00ea;}
+    50% {transform: rotate(0deg);transform: scale(1.4);}
+    55% {transform: rotate(0deg);color:#0004ff;}
+    60% {transform: rotate(20deg);color:#4dc217;}
+    65% {transform: rotate(0deg);color:#106270;}
+    70% {transform: rotate(0deg);color:#2c9b00;}
+    100% {transform: rotate(-360deg);color:#fffb00;}
+}
+
+@-o-keyframes h-font
+{
+    0% {transform: rotate(0deg);color:#fffb00;}
+    25% {transform: rotate(20deg);color:#ff00ea;}
+    50% {transform: rotate(0deg);transform: scale(1.4);}
+    55% {transform: rotate(0deg);color:#0004ff;}
+    60% {transform: rotate(20deg);color:#4dc217;}
+    65% {transform: rotate(0deg);color:#106270;}
+    70% {transform: rotate(0deg);color:#2c9b00;}
+    100% {transform: rotate(-360deg);color:#fffb00;}
+}
+
+.article-css{
+    font-size: 15px;
+}
+
+.archive-list a{
+    font-size: 15px;
+    color: black;
+}
+.archive-list .meta{
+    color: rgba(255, 0, 0, 0.801);
+}   
