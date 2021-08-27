@@ -1,3 +1,4 @@
+function cnC()
 {
 	var xmlhttp;
 	if (window.XMLHttpRequest)
